@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                }
+
+                .first {
+                        
+                }
+
+                header {
+                        height: 80px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                }
+
+                .logo {
+                        width: 40%;
+                        /* color: #DA0037; */
+                        color: #f07820;
+                        font-weight: bold;
+                        padding-left: 55px;
+                        font-size: x-large;
+                }
+
+                .logo h1 {
+                        text-transform: capitalize;
+                        text-shadow: 2px 2px 2px #dfe6e9;
+                }
+
+                .nav-bar {
+                        width: 50%;
+                        /* background-color: #6c5ce7; */
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                }
+
+                .nav-bar a {
+                        text-decoration: none;
+                        color: black;
+                        position: relative;
+                        right: 6vw;
+                        font-size: large;
+                }
+                .nav-bar a:hover{
+                        color: #f07820;
+                        transition: .3s;
+                        cursor: pointer;
+                }
+
+                .intro {
+                        margin: 14vw 10vw;
+                        font-size: larger;
+                }
+
+                .intro h2 {
+                        font-size: xx-large;
+                        text-shadow: 2px 9px 16px rgba(0, 0, 0, 0.324);
+                }
+
+                .hl {
+                        color: #f07820;
+                        font-size: larger;
+                }
+
+                button {
+                        background-color: #f07820;
+                        color: white;
+                        text-decoration: none;
+                        border: 2px solid transparent;
+                        font-weight: bold;
+                        padding: 13px 30px;
+                        border-radius: 30px;
+                        transition: .4s;
+                }
+
+                button:hover {
+                        background-color: transparent;
+                        background-color: rgba(210, 105, 30, 0.658);
+                        border: 2px solid whitesmoke;
+                        cursor: pointer;
+                }
+
+                .profile {
+                        height: 320px;
+                        width: 330px;
+                        border: 2px solid whitesmoke;
+                        border-radius: 50%;
+                        /*float: right;
+                        margin-right: -525px;
+                        margin-right: -24vw;
+                        margin-top: 150px;
+                        margin-top: 143px; */
+                        float: right;
+                        margin: 16vh 14vw;
+                        /* background-image: url(web/Abhishek_v15.png); */
+                        background-image: url(web/profile-removebg.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        box-shadow: 0 0 17.5px;
+                }
+
+                .icons {
+                        margin: -45px 145px;
+                        padding: 0px 6px;
+                }
+
+                .icons img {
+                        height: 30px;
+                        width: 30px;
+                        border: 2px solid rgba(0, 0, 0, 0.336);
+                        border-radius: 50%;
+                }
+
+                /* Second page */
+                #about {
+                        padding: 110px 210px;
+                        display: flex;
+                        /* border: 2px solid red; */
+                }
+
+                #about img {
+                        height: 430px;
+                        /* float: left; */
+                        /* margin: 12vh 22vh; */
+                        border: 8px solid #f07820;
+                }
+
+                .about-text {
+                        /* float: right; */
+                        /* border: 2px solid blue; */
+                        padding: 0px 110px;
+                }
+
+                .about-text h2 {
+                        font-size: 40px;
+                        margin: 15px 0px;
+                        color: #f07820;
+                }
+
+                .about-text h5 {
+                        letter-spacing: 2px;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                }
+
+                .about-text p {
+                        font-size: 18px;
+                        margin-bottom: 25px;
+                        line-height: 25px;
+                        /* letter-spacing: 1px; */
+                }
+
+                /* Third page */
+                #services h2 {
+                        font-size: 6vh;
+                        display: flex;
+                        justify-content: center;
+                }
+
+                .details {
+                        margin: 2px 191px;
+                        padding: 40px 1px;
+                        display: flex;
+                        /* border: 3px solid red; */
+                }
+
+                .details img {
+                        height: 60px;
+                        width: 60px;
+                }
+
+                .column {
+                        border: 2px solid #f07820;
+                        text-align: center;
+                        border-style: double;
+                        line-height: 25px;
+                        margin: 20px 20px;
+                        padding: 20px 20px;
+                }
+
+                /* Fourth page */
+                #work {
+                        margin: 100px 40px;
+                }
+
+                #work h2 {
+                        font-size: 6vh;
+                        display: flex;
+                        justify-content: center;
+                }
+
+                .pro {
+                        text-align: center;
+                        margin: 20px 20px;
+                        padding: 20px 20px;
+                }
+
+                .pro a img {
+                        height: 250px;
+                        width: 300px;
+                        /* border: 2px solid black; */
+                        text-align: center;
+                        line-height: 25px;
+                        margin: 20px 20px;
+                        padding: 20px 20px;
+                }
+                .pro a img:hover{
+                        background: linear-gradient(60deg,#f07720db,rgba(0, 0, 0, 0.447));
+                        /* color: black; */
+                        /* opacity: -1; */
+                        /* z-index: -1; */
+                }
+                /* Fifth page */
+                #contact {
+                        position: relative;
+                }
+
+                #contact h1 {
+                        text-align: center;
+                        font-size: 6vh;
+                }
+
+                #contact::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        opacity: 0.7;
+                        /* background: url('web/futuristic.avif') no-repeat center center/cover; */
+                }
+
+                #contact-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 34px;
+                }
+
+                #contact-box input,
+                #contact-box textarea {
+                        width: 100%;
+                        padding: 0.5rem;
+                        border-radius: 9px;
+                        font-size: 1.1rem;
+                }
+
+                #contact-box form {
+                        width: 40%;
+                }
+
+                #contact-box label {
+                        font-size: 1.3rem;
+                }
+
+                #contact #btn-s {
+                        margin: auto;
+                        display: flex;
+                }
+        </style>
+</head>
+
+<body>
+        <section class="first" id="fr">
+                <header>
+                        <div class="logo">Portfolio</div>
+                        <nav class="nav-bar">
+                                <a class="list" id="list-1">Home</a>
+                                <a class="list" id="list-2" href="#about">About</a>
+                                <a class="list" id="list-3" href="#services">Service</a>
+                                <a class="list" id="list-4" href="/web/Resume.pdf">Resume</a>
+                                <!-- <a class="list" id="list-5">Blog</a> -->
+                                <a class="list" id="list-6" href="#contact">Contact</a>
+                        </nav>
+                </header>
+                <!-- Introduction -->
+                <div class="profile"></div>
+                <div class="intro">
+                        <div class="hl">Hello</div>
+                        <h2>I'm Abhishek Verma</h2><br>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Quisquam, quod! Officia et
+                                similique fugit nulla <br> tempore dignissimos quod vero magni.</div><br>
+                        <button>Hire Me</button>
+                </div>
+                <div class="icons">
+                        <a href="" class="icon a"><img src="web/fblogo.png" alt=""></a>
+                        <a href="" class="icon b"><img src="web/linkedino.png" alt=""></a>
+                        <a href="" class="icon c"><img src="web/twitterlogo.png" alt=""></a>
+                        <!-- <a href="" class="icon d"><img src="web/fblogo.png" alt=""></a> -->
+                </div>
+
+        </section><br>
+
+        <!-- Second section -->
+        <section id="about">
+                <div class="image" id="abt">
+                        <img src="web/Kingsman1.png" alt="">
+                </div>
+                <div class="about-text">
+                        <h2>About Me</h2>
+                        <h5>I Am a Web Developer</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+                                repellendus voluptate sint fugit exercitationem quae at harum velit
+                                eius blanditiis nesciunt repudiandae, id accusantium magni accusamus.</p>
+                        <p>quos voluptatum, dolorem ipsum iste deserunt perferendis ad pariatur?
+                                Aperiam quasi magni iusto ex illo officiis aspernatur reprehenderit
+                                sequi repellendus quas. Aspernatur, voluptate consequatur!</p>
+                        <a href="/web/12064750_4882464.jpg" download=""><button type="button"
+                                        src="/web/12064750_4882464.jpg">Download CV</button></a>
+                </div>
+        </section>
+
+        <!-- Third section -->
+        <section id="services">
+                <h2>My Services</h2>
+                <div class="details">
+                        <div class="column" id="clm-1">
+                                <img src="web/programming.png" alt="">
+                                <h3>Web Design</h3><br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit eveniet nam
+                                tempora autem dolores repudiandae.
+                        </div>
+                        <div class="column" id="clm-2">
+                                <img src="web/app-development.png" alt="">
+                                <h3>Development</h3><br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit eveniet nam
+                                tempora autem dolores repudiandae.
+                        </div>
+                        <div class="column" id="clm-3">
+                                <img src="web/responsive-design.png" alt="">
+                                <h3>Responsive Design</h3><br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit eveniet nam
+                                tempora autem dolores repudiandae.
+                        </div>
+                </div>
+        </section>
+
+        <!-- Fourth section -->
+        <section id="work">
+                <h2>Projects</h2>
+                <div class="pro">
+                        <a href="">
+                                <img src="web/workingonweb.png" alt="">
+                        </a>
+                        <a href="" class="ecc">
+                                <img src="web/ecommerce.png" alt="">
+                        </a>
+                        <a href="">
+                                <img src="web/netflix.webp" alt="">
+                        </a>
+                </div>
+        </section>
+
+        <!-- Fifth section -->
+        <section id="contact">
+                <h1 class="h-primary center">Contact</h1>
+                <div id="contact-box">
+                        <form action="">
+                                <div class="form-group">
+                                        <label for="name">Name: </label>
+                                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                        <label for="email">Email: </label>
+                                        <input type="email" name="name" id="name" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                        <label for="phone">Phone Number: </label>
+                                        <input type="phone" name="name" id="name" placeholder="Enter your phone">
+                                </div>
+                                <div class="form-group">
+                                        <label for="message">Message: </label>
+                                        <textarea name="message" id="message" cols="10" rows="5"></textarea>
+                                </div>
+                        </form>
+                </div>
+                <button type="button" id="btn-s">Send</button>
+                <a href="#fr"><img src="web/up-arrow.png" style="float:right; height: 20px; width: 20px; margin-right: 70px; margin-top: -40px;"></a>
+        </section>
+</body>
+
+</html>
